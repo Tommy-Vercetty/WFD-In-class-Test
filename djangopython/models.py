@@ -25,10 +25,19 @@ class Car(models.Model):
     car_For_Sale = models.BooleanFild(max_length=50)
 
 class Customer(models.Model):
-    
+    last_name = models.CharField(max_length=50)
+    first_name = models.CharFild(max_length=50)
+    phone_Number = models.IntegerField(max_length=50)
+    address = models.CharFild(max_length=100)
+    city = models.CharFild(max_length=50)
+    state_Province = models.CharFild(max_length=100)
+    postalCode = models.IntgerFild(max_length=50)
 
 class Service(models.Model):
     service_Name = models.CharFild(max_length=50)
     hourly_Rate = models.IntField(max_length=50)
+
+class Parts(models.Model):
+
 
  
