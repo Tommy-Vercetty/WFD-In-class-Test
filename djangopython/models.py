@@ -38,6 +38,10 @@ class Service(models.Model):
     hourly_Rate = models.IntField(max_length=50)
 
 class Parts(models.Model):
+    part_Number = models.IntField(max_length=50)
+    description = models.CharFild(max_length=50)
+    purchase_Price = models.IntField(max_length=50)
+    retail_Price = models.IntField(max_length=50)
 
 
  
