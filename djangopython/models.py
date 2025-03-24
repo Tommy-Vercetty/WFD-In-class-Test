@@ -16,21 +16,19 @@ class SalesInvoice(models.Model):
     Salesperson = models.ForeignKey(Salesperson)
     
 class Car(models.Model):
-        car_ID = models.IntegerField(primary_key=True)
-        serial_number = models.IntField(max_length=50)
-        make = models.CharFild(max_length=50)
-        model = models.CharFild(max_length=50)
-        colour = models.CharFild(max_length=50)
-        year = models.IntegerFild(max_length=50)
-        car_For_Sale = models.BooleanFild(max_length=50)
+    car_ID = models.IntegerField(primary_key=True)
+    serial_number = models.IntField(max_length=50)
+    make = models.CharFild(max_length=50)
+    model = models.CharFild(max_length=50)
+    colour = models.CharFild(max_length=50)
+    year = models.IntegerFild(max_length=50)
+    car_For_Sale = models.BooleanFild(max_length=50)
 
 class Customer(models.Model):
-
+    
 
 class Service(models.Model):
     service_Name = models.CharFild(max_length=50)
     hourly_Rate = models.IntField(max_length=50)
-
-
 
  
